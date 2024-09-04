@@ -52,7 +52,10 @@
         </li>
       <% end %>
     </header>
-    <%= yield %>
+    <main>
+      <%= flash[:notice] %>
+      <%= yield %>
+    </main>
     <footer>
       <div class="container mt-5">
   	    <div class="row">
